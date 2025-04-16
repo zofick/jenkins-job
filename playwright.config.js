@@ -40,6 +40,10 @@ module.exports = defineConfig({
         ...devices['Desktop Chrome'],
         viewport: {width: 1850, height: 1000} 
       },
+      reporter: [
+  ['html', { outputFolder: 'playwright-report', open: 'never' }],
+  ['junit', { outputFile: 'test-results/results.xml' }],
+],
     },
 
 /*    
