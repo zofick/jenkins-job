@@ -44,6 +44,9 @@ module.exports = defineConfig({
   ['html', { outputFolder: 'playwright-report', open: 'never' }],
   ['junit', { outputFile: 'test-results/results.xml' }],
 ],
+
+      reporter: [['html', { outputFolder: 'playwright-report', open: 'never' }]],
+
     },
 
 /*    
